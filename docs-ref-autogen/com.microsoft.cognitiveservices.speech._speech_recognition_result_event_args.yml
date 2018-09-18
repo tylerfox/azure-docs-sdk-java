@@ -17,12 +17,12 @@ items:
   source:
     remote: &o0
       path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResultEventArgs.java
-      branch: javadocs
+      branch: javadocs201809
       repo: https://msasg.visualstudio.com/DefaultCollection/Skyman/_git/Carbon
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResultEventArgs.java
-    startLine: 12
+    startLine: 11
   package: com.microsoft.cognitiveservices.speech
-  summary: <p>Defines contents of speech intermediate/final result event. </p>
+  summary: <p>Defines contents of speech recognizing/recognized event. </p>
   syntax:
     content: public class SpeechRecognitionResultEventArgs
   inheritance:
@@ -41,7 +41,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResultEventArgs.java
-    startLine: 27
+    startLine: 26
   package: com.microsoft.cognitiveservices.speech
   summary: <p>Specifies the recognition result. </p>
   syntax:
@@ -63,7 +63,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResultEventArgs.java
-    startLine: 36
+    startLine: 35
   package: com.microsoft.cognitiveservices.speech
   summary: <p>Specifies the session identifier. </p>
   syntax:
@@ -85,7 +85,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResultEventArgs.java
-    startLine: 46
+    startLine: 45
   package: com.microsoft.cognitiveservices.speech
   summary: <p>Returns a String that represents the speech recognition result event. </p>
   syntax:

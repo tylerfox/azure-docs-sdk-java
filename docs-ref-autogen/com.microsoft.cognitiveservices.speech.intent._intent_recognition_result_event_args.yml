@@ -4,7 +4,6 @@ items:
   id: _intent_recognition_result_event_args
   parent: com.microsoft.cognitiveservices.speech.intent
   children:
-  - com.microsoft.cognitiveservices.speech.intent._intent_recognition_result_event_args.getProperties()
   - com.microsoft.cognitiveservices.speech.intent._intent_recognition_result_event_args.getResult()
   - com.microsoft.cognitiveservices.speech.intent._intent_recognition_result_event_args.getSessionId()
   - com.microsoft.cognitiveservices.speech.intent._intent_recognition_result_event_args.toString()
@@ -18,36 +17,16 @@ items:
   source:
     remote: &o0
       path: source/bindings/java/com/microsoft/cognitiveservices/speech/intent/IntentRecognitionResultEventArgs.java
-      branch: javadocs
+      branch: javadocs201809
       repo: https://msasg.visualstudio.com/DefaultCollection/Skyman/_git/Carbon
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/intent/IntentRecognitionResultEventArgs.java
     startLine: 14
   package: com.microsoft.cognitiveservices.speech.intent
-  summary: <p>Defines content of an intent intermediate/final result events. </p>
+  summary: <p>Defines content of an intent recognizing/recognized events. </p>
   syntax:
     content: public class IntentRecognitionResultEventArgs
   inheritance:
   - java.lang.Object
-- uid: com.microsoft.cognitiveservices.speech.intent._intent_recognition_result_event_args.getProperties()
-  id: getProperties()
-  parent: com.microsoft.cognitiveservices.speech.intent._intent_recognition_result_event_args
-  href: com.microsoft.cognitiveservices.speech.intent._intent_recognition_result_event_args.yml
-  langs:
-  - java
-  name: getProperties()
-  nameWithType: IntentRecognitionResultEventArgs.getProperties()
-  fullName: com.microsoft.cognitiveservices.speech.intent.IntentRecognitionResultEventArgs.getProperties()
-  overload: com.microsoft.cognitiveservices.speech.intent._intent_recognition_result_event_args.getProperties*
-  type: Method
-  source:
-    remote: *o0
-    path: source/bindings/java/com/microsoft/cognitiveservices/speech/intent/IntentRecognitionResultEventArgs.java
-    startLine: 48
-  package: com.microsoft.cognitiveservices.speech.intent
-  syntax:
-    content: public ResultPropertyValueCollection getProperties()
-    return:
-      type: eb3721e4
 - uid: com.microsoft.cognitiveservices.speech.intent._intent_recognition_result_event_args.getResult()
   id: getResult()
   parent: com.microsoft.cognitiveservices.speech.intent._intent_recognition_result_event_args
@@ -106,7 +85,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/intent/IntentRecognitionResultEventArgs.java
-    startLine: 62
+    startLine: 53
   package: com.microsoft.cognitiveservices.speech.intent
   summary: <p>Returns a String that represents the session id and the intent recognition result event. </p>
   syntax:
@@ -136,15 +115,6 @@ references:
   name: getSessionId
   nameWithType: IntentRecognitionResultEventArgs.getSessionId
   fullName: com.microsoft.cognitiveservices.speech.intent.IntentRecognitionResultEventArgs.getSessionId
-  package: com.microsoft.cognitiveservices.speech.intent
-- uid: eb3721e4
-  spec.java:
-  - name: ResultPropertyValueCollection
-    fullName: ResultPropertyValueCollection
-- uid: com.microsoft.cognitiveservices.speech.intent._intent_recognition_result_event_args.getProperties*
-  name: getProperties
-  nameWithType: IntentRecognitionResultEventArgs.getProperties
-  fullName: com.microsoft.cognitiveservices.speech.intent.IntentRecognitionResultEventArgs.getProperties
   package: com.microsoft.cognitiveservices.speech.intent
 - uid: "26831127"
   spec.java:

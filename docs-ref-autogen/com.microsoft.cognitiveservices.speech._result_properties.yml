@@ -1,0 +1,286 @@
+### YamlMime:ManagedReference
+items:
+- uid: com.microsoft.cognitiveservices.speech._result_properties
+  id: _result_properties
+  parent: com.microsoft.cognitiveservices.speech
+  children:
+  - com.microsoft.cognitiveservices.speech._result_properties.close()
+  - com.microsoft.cognitiveservices.speech._result_properties.getProperty(PropertyId)
+  - com.microsoft.cognitiveservices.speech._result_properties.getProperty(String)
+  - com.microsoft.cognitiveservices.speech._result_properties.getProperty(String,String)
+  - com.microsoft.cognitiveservices.speech._result_properties.ResultProperties(ResultPropertyCollection)
+  - com.microsoft.cognitiveservices.speech._result_properties.setProperty(PropertyId,String)
+  - com.microsoft.cognitiveservices.speech._result_properties.setProperty(String,String)
+  href: com.microsoft.cognitiveservices.speech._result_properties.yml
+  langs:
+  - java
+  name: ResultProperties
+  nameWithType: ResultProperties
+  fullName: com.microsoft.cognitiveservices.speech.ResultProperties
+  type: Class
+  source:
+    remote: &o0
+      path: source/bindings/java/com/microsoft/cognitiveservices/speech/ResultProperties.java
+      branch: javadocs201809
+      repo: https://msasg.visualstudio.com/DefaultCollection/Skyman/_git/Carbon
+    path: source/bindings/java/com/microsoft/cognitiveservices/speech/ResultProperties.java
+    startLine: 16
+  package: com.microsoft.cognitiveservices.speech
+  summary: '<p>Result property collection. TODO: Merge with RecognizerProperties </p>'
+  syntax:
+    content: public class ResultProperties extends PropertyCollection
+  inheritance:
+  - java.lang.Object
+  - Closeable
+  - com.microsoft.cognitiveservices.speech._property_collection
+  inheritedMembers:
+  - com.microsoft.cognitiveservices.speech._property_collection.PropertyCollection(com.microsoft.cognitiveservices.speech.internal.PropertyCollection)
+- uid: com.microsoft.cognitiveservices.speech._result_properties.close()
+  id: close()
+  parent: com.microsoft.cognitiveservices.speech._result_properties
+  href: com.microsoft.cognitiveservices.speech._result_properties.yml
+  langs:
+  - java
+  name: close()
+  nameWithType: ResultProperties.close()
+  fullName: com.microsoft.cognitiveservices.speech.ResultProperties.close()
+  overload: com.microsoft.cognitiveservices.speech._result_properties.close*
+  type: Method
+  source:
+    remote: *o0
+    path: source/bindings/java/com/microsoft/cognitiveservices/speech/ResultProperties.java
+    startLine: 88
+  package: com.microsoft.cognitiveservices.speech
+  summary: <p>Dispose of the associated parameter value collection. </p>
+  syntax:
+    content: public void close()
+- uid: com.microsoft.cognitiveservices.speech._result_properties.getProperty(PropertyId)
+  id: getProperty(PropertyId)
+  parent: com.microsoft.cognitiveservices.speech._result_properties
+  href: com.microsoft.cognitiveservices.speech._result_properties.yml
+  langs:
+  - java
+  name: getProperty(PropertyId id)
+  nameWithType: ResultProperties.getProperty(PropertyId id)
+  fullName: com.microsoft.cognitiveservices.speech.ResultProperties.getProperty(PropertyId id)
+  overload: com.microsoft.cognitiveservices.speech._result_properties.getProperty*
+  type: Method
+  source:
+    remote: *o0
+    path: source/bindings/java/com/microsoft/cognitiveservices/speech/ResultProperties.java
+    startLine: 55
+  package: com.microsoft.cognitiveservices.speech
+  summary: >-
+    <p>Gets the property's value by its id</p>
+
+    <p></p>
+  syntax:
+    content: public String getProperty(PropertyId id)
+    parameters:
+    - id: id
+      type: com.microsoft.cognitiveservices.speech._property_id
+      description: <p>The property id </p>
+    return:
+      type: "26831127"
+      description: <p>The value of the property. </p>
+- uid: com.microsoft.cognitiveservices.speech._result_properties.getProperty(String)
+  id: getProperty(String)
+  parent: com.microsoft.cognitiveservices.speech._result_properties
+  href: com.microsoft.cognitiveservices.speech._result_properties.yml
+  langs:
+  - java
+  name: getProperty(String name)
+  nameWithType: ResultProperties.getProperty(String name)
+  fullName: com.microsoft.cognitiveservices.speech.ResultProperties.getProperty(String name)
+  overload: com.microsoft.cognitiveservices.speech._result_properties.getProperty*
+  type: Method
+  source:
+    remote: *o0
+    path: source/bindings/java/com/microsoft/cognitiveservices/speech/ResultProperties.java
+    startLine: 30
+  package: com.microsoft.cognitiveservices.speech
+  summary: >-
+    <p>Returns the property value. If the name is not available, it returns an empty String.</p>
+
+    <p></p>
+  syntax:
+    content: public String getProperty(String name)
+    parameters:
+    - id: name
+      type: "26831127"
+      description: <p>The property name. </p>
+    return:
+      type: "26831127"
+      description: <p>value of the property. </p>
+- uid: com.microsoft.cognitiveservices.speech._result_properties.getProperty(String,String)
+  id: getProperty(String,String)
+  parent: com.microsoft.cognitiveservices.speech._result_properties
+  href: com.microsoft.cognitiveservices.speech._result_properties.yml
+  langs:
+  - java
+  name: getProperty(String name, String defaultValue)
+  nameWithType: ResultProperties.getProperty(String name, String defaultValue)
+  fullName: com.microsoft.cognitiveservices.speech.ResultProperties.getProperty(String name, String defaultValue)
+  overload: com.microsoft.cognitiveservices.speech._result_properties.getProperty*
+  type: Method
+  source:
+    remote: *o0
+    path: source/bindings/java/com/microsoft/cognitiveservices/speech/ResultProperties.java
+    startLine: 42
+  package: com.microsoft.cognitiveservices.speech
+  summary: >-
+    <p>Returns the property value. If the name is not available, it returns a default value.</p>
+
+    <p></p>
+  syntax:
+    content: public String getProperty(String name, String defaultValue)
+    parameters:
+    - id: name
+      type: "26831127"
+      description: <p>The property name. </p>
+    - id: defaultValue
+      type: "26831127"
+      description: <p>The default value which is returned if the property is not available in the collection. </p>
+    return:
+      type: "26831127"
+      description: <p>value of the property. </p>
+- uid: com.microsoft.cognitiveservices.speech._result_properties.ResultProperties(ResultPropertyCollection)
+  id: ResultProperties(ResultPropertyCollection)
+  parent: com.microsoft.cognitiveservices.speech._result_properties
+  href: com.microsoft.cognitiveservices.speech._result_properties.yml
+  langs:
+  - java
+  name: ResultProperties(ResultPropertyCollection collection)
+  nameWithType: ResultProperties.ResultProperties(ResultPropertyCollection collection)
+  fullName: com.microsoft.cognitiveservices.speech.ResultProperties.ResultProperties(ResultPropertyCollection collection)
+  overload: com.microsoft.cognitiveservices.speech._result_properties.ResultProperties*
+  type: Constructor
+  source:
+    remote: *o0
+    path: source/bindings/java/com/microsoft/cognitiveservices/speech/ResultProperties.java
+    startLine: 18
+  package: com.microsoft.cognitiveservices.speech
+  syntax:
+    content: public ResultProperties(ResultPropertyCollection collection)
+    parameters:
+    - id: collection
+      type: 30ba00f5
+- uid: com.microsoft.cognitiveservices.speech._result_properties.setProperty(PropertyId,String)
+  id: setProperty(PropertyId,String)
+  parent: com.microsoft.cognitiveservices.speech._result_properties
+  href: com.microsoft.cognitiveservices.speech._result_properties.yml
+  langs:
+  - java
+  name: setProperty(PropertyId id, String value)
+  nameWithType: ResultProperties.setProperty(PropertyId id, String value)
+  fullName: com.microsoft.cognitiveservices.speech.ResultProperties.setProperty(PropertyId id, String value)
+  overload: com.microsoft.cognitiveservices.speech._result_properties.setProperty*
+  type: Method
+  source:
+    remote: *o0
+    path: source/bindings/java/com/microsoft/cognitiveservices/speech/ResultProperties.java
+    startLine: 78
+  package: com.microsoft.cognitiveservices.speech
+  summary: >-
+    <p>Sets the property's value by id</p>
+
+    <p></p>
+  syntax:
+    content: public void setProperty(PropertyId id, String value)
+    parameters:
+    - id: id
+      type: com.microsoft.cognitiveservices.speech._property_id
+      description: <p>The property id </p>
+    - id: value
+      type: "26831127"
+      description: <p>The value of the parameter. </p>
+- uid: com.microsoft.cognitiveservices.speech._result_properties.setProperty(String,String)
+  id: setProperty(String,String)
+  parent: com.microsoft.cognitiveservices.speech._result_properties
+  href: com.microsoft.cognitiveservices.speech._result_properties.yml
+  langs:
+  - java
+  name: setProperty(String name, String value)
+  nameWithType: ResultProperties.setProperty(String name, String value)
+  fullName: com.microsoft.cognitiveservices.speech.ResultProperties.setProperty(String name, String value)
+  overload: com.microsoft.cognitiveservices.speech._result_properties.setProperty*
+  type: Method
+  source:
+    remote: *o0
+    path: source/bindings/java/com/microsoft/cognitiveservices/speech/ResultProperties.java
+    startLine: 65
+  package: com.microsoft.cognitiveservices.speech
+  summary: >-
+    <p>Sets the propery value by name</p>
+
+    <p></p>
+  syntax:
+    content: public void setProperty(String name, String value)
+    parameters:
+    - id: name
+      type: "26831127"
+      description: <p>The property name. </p>
+    - id: value
+      type: "26831127"
+      description: <p>The value of the property. </p>
+references:
+- uid: 30ba00f5
+  spec.java:
+  - name: ResultPropertyCollection
+    fullName: ResultPropertyCollection
+- uid: com.microsoft.cognitiveservices.speech._result_properties.ResultProperties*
+  name: ResultProperties
+  nameWithType: ResultProperties.ResultProperties
+  fullName: com.microsoft.cognitiveservices.speech.ResultProperties.ResultProperties
+  package: com.microsoft.cognitiveservices.speech
+- uid: "26831127"
+  spec.java:
+  - name: String
+    fullName: String
+- uid: com.microsoft.cognitiveservices.speech._result_properties.getProperty*
+  name: getProperty
+  nameWithType: ResultProperties.getProperty
+  fullName: com.microsoft.cognitiveservices.speech.ResultProperties.getProperty
+  package: com.microsoft.cognitiveservices.speech
+- uid: com.microsoft.cognitiveservices.speech._result_properties.setProperty*
+  name: setProperty
+  nameWithType: ResultProperties.setProperty
+  fullName: com.microsoft.cognitiveservices.speech.ResultProperties.setProperty
+  package: com.microsoft.cognitiveservices.speech
+- uid: com.microsoft.cognitiveservices.speech._result_properties.close*
+  name: close
+  nameWithType: ResultProperties.close
+  fullName: com.microsoft.cognitiveservices.speech.ResultProperties.close
+  package: com.microsoft.cognitiveservices.speech
+- uid: com.microsoft.cognitiveservices.speech._property_collection.PropertyCollection(com.microsoft.cognitiveservices.speech.internal.PropertyCollection)
+  parent: com.microsoft.cognitiveservices.speech._property_collection
+  href: com.microsoft.cognitiveservices.speech._property_collection.yml
+  name: PropertyCollection(com.microsoft.cognitiveservices.speech.internal.PropertyCollection collection)
+  nameWithType: PropertyCollection.PropertyCollection(com.microsoft.cognitiveservices.speech.internal.PropertyCollection collection)
+  fullName: com.microsoft.cognitiveservices.speech.PropertyCollection.PropertyCollection(com.microsoft.cognitiveservices.speech.internal.PropertyCollection collection)
+  type: Constructor
+  syntax:
+    content: protected PropertyCollection(com.microsoft.cognitiveservices.speech.internal.PropertyCollection collection)
+    parameters:
+    - id: collection
+      type: 41caefba
+- uid: com.microsoft.cognitiveservices.speech._property_collection
+  parent: com.microsoft.cognitiveservices.speech
+  href: com.microsoft.cognitiveservices.speech._property_collection.yml
+  name: PropertyCollection
+  nameWithType: PropertyCollection
+  fullName: com.microsoft.cognitiveservices.speech.PropertyCollection
+  type: Class
+  summary: <p>Represents collection or properties and their values. </p>
+  syntax:
+    content: public class PropertyCollection
+- uid: com.microsoft.cognitiveservices.speech._property_id
+  parent: com.microsoft.cognitiveservices.speech
+  href: com.microsoft.cognitiveservices.speech._property_id.yml
+  name: PropertyId
+  nameWithType: PropertyId
+  fullName: com.microsoft.cognitiveservices.speech.PropertyId
+  type: Enum
+  summary: <p>Defines property ids. </p>
+  syntax:
+    content: public enum PropertyId

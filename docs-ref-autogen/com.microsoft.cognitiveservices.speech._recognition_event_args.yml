@@ -4,9 +4,8 @@ items:
   id: _recognition_event_args
   parent: com.microsoft.cognitiveservices.speech
   children:
-  - com.microsoft.cognitiveservices.speech._recognition_event_args.eventType
   - com.microsoft.cognitiveservices.speech._recognition_event_args.offset
-  - com.microsoft.cognitiveservices.speech._recognition_event_args.RecognitionEventArgs(RecognitionEventType,com.microsoft.cognitiveservices.speech.internal.RecognitionEventArgs)
+  - com.microsoft.cognitiveservices.speech._recognition_event_args.RecognitionEventArgs(com.microsoft.cognitiveservices.speech.internal.RecognitionEventArgs)
   - com.microsoft.cognitiveservices.speech._recognition_event_args.sessionId
   - com.microsoft.cognitiveservices.speech._recognition_event_args.toString()
   href: com.microsoft.cognitiveservices.speech._recognition_event_args.yml
@@ -19,7 +18,7 @@ items:
   source:
     remote: &o0
       path: source/bindings/java/com/microsoft/cognitiveservices/speech/RecognitionEventArgs.java
-      branch: javadocs
+      branch: javadocs201809
       repo: https://msasg.visualstudio.com/DefaultCollection/Skyman/_git/Carbon
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/RecognitionEventArgs.java
     startLine: 12
@@ -29,26 +28,6 @@ items:
     content: public class RecognitionEventArgs
   inheritance:
   - java.lang.Object
-- uid: com.microsoft.cognitiveservices.speech._recognition_event_args.eventType
-  id: eventType
-  parent: com.microsoft.cognitiveservices.speech._recognition_event_args
-  href: com.microsoft.cognitiveservices.speech._recognition_event_args.yml
-  langs:
-  - java
-  name: eventType
-  nameWithType: RecognitionEventArgs.eventType
-  fullName: com.microsoft.cognitiveservices.speech.RecognitionEventArgs.eventType
-  type: Field
-  source:
-    remote: *o0
-    path: source/bindings/java/com/microsoft/cognitiveservices/speech/RecognitionEventArgs.java
-    startLine: 28
-  package: com.microsoft.cognitiveservices.speech
-  summary: <p>Represents the event type. </p>
-  syntax:
-    content: public final RecognitionEventType eventType
-    return:
-      type: 93de0ef9com.microsoft.cognitiveservices.speech._recognition_event_type
 - uid: com.microsoft.cognitiveservices.speech._recognition_event_args.offset
   id: offset
   parent: com.microsoft.cognitiveservices.speech._recognition_event_args
@@ -62,22 +41,22 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/RecognitionEventArgs.java
-    startLine: 38
+    startLine: 32
   package: com.microsoft.cognitiveservices.speech
   summary: <p>Represents the message offset </p>
   syntax:
     content: public final BigInteger offset
     return:
       type: be355037
-- uid: com.microsoft.cognitiveservices.speech._recognition_event_args.RecognitionEventArgs(RecognitionEventType,com.microsoft.cognitiveservices.speech.internal.RecognitionEventArgs)
+- uid: com.microsoft.cognitiveservices.speech._recognition_event_args.RecognitionEventArgs(com.microsoft.cognitiveservices.speech.internal.RecognitionEventArgs)
   id: RecognitionEventArgs)
   parent: com.microsoft.cognitiveservices.speech._recognition_event_args
   href: com.microsoft.cognitiveservices.speech._recognition_event_args.yml
   langs:
   - java
-  name: RecognitionEventArgs(RecognitionEventType type, com.microsoft.cognitiveservices.speech.internal.RecognitionEventArgs arg)
-  nameWithType: RecognitionEventArgs.RecognitionEventArgs(RecognitionEventType type, com.microsoft.cognitiveservices.speech.internal.RecognitionEventArgs arg)
-  fullName: com.microsoft.cognitiveservices.speech.RecognitionEventArgs.RecognitionEventArgs(RecognitionEventType type, com.microsoft.cognitiveservices.speech.internal.RecognitionEventArgs arg)
+  name: RecognitionEventArgs(com.microsoft.cognitiveservices.speech.internal.RecognitionEventArgs arg)
+  nameWithType: RecognitionEventArgs.RecognitionEventArgs(com.microsoft.cognitiveservices.speech.internal.RecognitionEventArgs arg)
+  fullName: com.microsoft.cognitiveservices.speech.RecognitionEventArgs.RecognitionEventArgs(com.microsoft.cognitiveservices.speech.internal.RecognitionEventArgs arg)
   overload: com.microsoft.cognitiveservices.speech._recognition_event_args.RecognitionEventArgs*
   type: Constructor
   source:
@@ -86,10 +65,8 @@ items:
     startLine: 14
   package: com.microsoft.cognitiveservices.speech
   syntax:
-    content: public RecognitionEventArgs(RecognitionEventType type, com.microsoft.cognitiveservices.speech.internal.RecognitionEventArgs arg)
+    content: public RecognitionEventArgs(com.microsoft.cognitiveservices.speech.internal.RecognitionEventArgs arg)
     parameters:
-    - id: type
-      type: com.microsoft.cognitiveservices.speech._recognition_event_type
     - id: arg
       type: 426b60a1
 - uid: com.microsoft.cognitiveservices.speech._recognition_event_args.sessionId
@@ -105,7 +82,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/RecognitionEventArgs.java
-    startLine: 33
+    startLine: 27
   package: com.microsoft.cognitiveservices.speech
   summary: <p>Represents the session identifier. </p>
   syntax:
@@ -126,7 +103,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/RecognitionEventArgs.java
-    startLine: 45
+    startLine: 39
   package: com.microsoft.cognitiveservices.speech
   summary: <p>Returns a String that represents the session event. </p>
   syntax:
@@ -135,14 +112,6 @@ items:
       type: "26831127"
       description: <p>A String that represents the session event. </p>
 references:
-- uid: 93de0ef9com.microsoft.cognitiveservices.speech._recognition_event_type
-  spec.java:
-  - name: 'final '
-    fullName: 'final '
-  - uid: com.microsoft.cognitiveservices.speech._recognition_event_type
-    name: RecognitionEventType
-    fullName: com.microsoft.cognitiveservices.speech.RecognitionEventType
-    href: com.microsoft.cognitiveservices.speech._recognition_event_type.yml
 - uid: 3d93591e
   spec.java:
   - name: final String
@@ -169,13 +138,3 @@ references:
   nameWithType: RecognitionEventArgs.toString
   fullName: com.microsoft.cognitiveservices.speech.RecognitionEventArgs.toString
   package: com.microsoft.cognitiveservices.speech
-- uid: com.microsoft.cognitiveservices.speech._recognition_event_type
-  parent: com.microsoft.cognitiveservices.speech
-  href: com.microsoft.cognitiveservices.speech._recognition_event_type.yml
-  name: RecognitionEventType
-  nameWithType: RecognitionEventType
-  fullName: com.microsoft.cognitiveservices.speech.RecognitionEventType
-  type: Enum
-  summary: <p>Define RecognitionEventType event types. </p>
-  syntax:
-    content: public enum RecognitionEventType

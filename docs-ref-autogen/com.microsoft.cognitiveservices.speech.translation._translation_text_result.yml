@@ -5,7 +5,6 @@ items:
   parent: com.microsoft.cognitiveservices.speech.translation
   children:
   - com.microsoft.cognitiveservices.speech.translation._translation_text_result.getTranslations()
-  - com.microsoft.cognitiveservices.speech.translation._translation_text_result.getTranslationStatus()
   - com.microsoft.cognitiveservices.speech.translation._translation_text_result.toString()
   - com.microsoft.cognitiveservices.speech.translation._translation_text_result.TranslationTextResult(com.microsoft.cognitiveservices.speech.internal.TranslationTextResult)
   href: com.microsoft.cognitiveservices.speech.translation._translation_text_result.yml
@@ -18,12 +17,12 @@ items:
   source:
     remote: &o0
       path: source/bindings/java/com/microsoft/cognitiveservices/speech/translation/TranslationTextResult.java
-      branch: javadocs
+      branch: javadocs201809
       repo: https://msasg.visualstudio.com/DefaultCollection/Skyman/_git/Carbon
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/translation/TranslationTextResult.java
-    startLine: 17
+    startLine: 12
   package: com.microsoft.cognitiveservices.speech.translation
-  summary: <p>Defines TranslationText result. </p>
+  summary: <p>Defines translation text result. </p>
   syntax:
     content: public class TranslationTextResult extends SpeechRecognitionResult
   inheritance:
@@ -32,7 +31,6 @@ items:
   inheritedMembers:
   - com.microsoft.cognitiveservices.speech._speech_recognition_result.close()
   - com.microsoft.cognitiveservices.speech._speech_recognition_result.getDuration()
-  - com.microsoft.cognitiveservices.speech._speech_recognition_result.getErrorDetails()
   - com.microsoft.cognitiveservices.speech._speech_recognition_result.getJson()
   - com.microsoft.cognitiveservices.speech._speech_recognition_result.getOffset()
   - com.microsoft.cognitiveservices.speech._speech_recognition_result.getProperties()
@@ -54,7 +52,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/translation/TranslationTextResult.java
-    startLine: 48
+    startLine: 31
   package: com.microsoft.cognitiveservices.speech.translation
   summary: <p>Presents the translation results. Each item in the dictionary represents translation result in one of target languages, where the key is the name of the target language, in BCP-47 format, and the value is the translation text in the specified language. </p>
   syntax:
@@ -62,28 +60,6 @@ items:
     return:
       type: 15b3ef59
       description: <p>the current translation map. </p>
-- uid: com.microsoft.cognitiveservices.speech.translation._translation_text_result.getTranslationStatus()
-  id: getTranslationStatus()
-  parent: com.microsoft.cognitiveservices.speech.translation._translation_text_result
-  href: com.microsoft.cognitiveservices.speech.translation._translation_text_result.yml
-  langs:
-  - java
-  name: getTranslationStatus()
-  nameWithType: TranslationTextResult.getTranslationStatus()
-  fullName: com.microsoft.cognitiveservices.speech.translation.TranslationTextResult.getTranslationStatus()
-  overload: com.microsoft.cognitiveservices.speech.translation._translation_text_result.getTranslationStatus*
-  type: Method
-  source:
-    remote: *o0
-    path: source/bindings/java/com/microsoft/cognitiveservices/speech/translation/TranslationTextResult.java
-    startLine: 37
-  package: com.microsoft.cognitiveservices.speech.translation
-  summary: <p>Specifies translation status. </p>
-  syntax:
-    content: public final TranslationStatus getTranslationStatus()
-    return:
-      type: 93de0ef9com.microsoft.cognitiveservices.speech.translation._translation_status
-      description: <p>the translation status. </p>
 - uid: com.microsoft.cognitiveservices.speech.translation._translation_text_result.toString()
   id: toString()
   parent: com.microsoft.cognitiveservices.speech.translation._translation_text_result
@@ -98,7 +74,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/translation/TranslationTextResult.java
-    startLine: 59
+    startLine: 41
   package: com.microsoft.cognitiveservices.speech.translation
   summary: <p>Returns a String that represents the speech recognition result. </p>
   syntax:
@@ -120,7 +96,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/translation/TranslationTextResult.java
-    startLine: 20
+    startLine: 15
   package: com.microsoft.cognitiveservices.speech.translation
   syntax:
     content: public TranslationTextResult(com.microsoft.cognitiveservices.speech.internal.TranslationTextResult result)
@@ -136,19 +112,6 @@ references:
   name: TranslationTextResult
   nameWithType: TranslationTextResult.TranslationTextResult
   fullName: com.microsoft.cognitiveservices.speech.translation.TranslationTextResult.TranslationTextResult
-  package: com.microsoft.cognitiveservices.speech.translation
-- uid: 93de0ef9com.microsoft.cognitiveservices.speech.translation._translation_status
-  spec.java:
-  - name: 'final '
-    fullName: 'final '
-  - uid: com.microsoft.cognitiveservices.speech.translation._translation_status
-    name: TranslationStatus
-    fullName: com.microsoft.cognitiveservices.speech.translation.TranslationStatus
-    href: com.microsoft.cognitiveservices.speech.translation._translation_status.yml
-- uid: com.microsoft.cognitiveservices.speech.translation._translation_text_result.getTranslationStatus*
-  name: getTranslationStatus
-  nameWithType: TranslationTextResult.getTranslationStatus
-  fullName: com.microsoft.cognitiveservices.speech.translation.TranslationTextResult.getTranslationStatus
   package: com.microsoft.cognitiveservices.speech.translation
 - uid: 15b3ef59
   spec.java:
@@ -191,19 +154,6 @@ references:
     return:
       type: 0364520f
       description: <p>Duration of recognized speech in milliseconds. </p>
-- uid: com.microsoft.cognitiveservices.speech._speech_recognition_result.getErrorDetails()
-  parent: com.microsoft.cognitiveservices.speech._speech_recognition_result
-  href: com.microsoft.cognitiveservices.speech._speech_recognition_result.yml
-  name: getErrorDetails()
-  nameWithType: SpeechRecognitionResult.getErrorDetails()
-  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionResult.getErrorDetails()
-  type: Method
-  summary: <p>In case of an unsuccessful recognition, provides a brief description of an occurred error. This field is only filled-out if the recognition status (</p>
-  syntax:
-    content: public String getErrorDetails()
-    return:
-      type: "26831127"
-      description: <p>a brief description of an error. </p>
 - uid: com.microsoft.cognitiveservices.speech._speech_recognition_result.getJson()
   parent: com.microsoft.cognitiveservices.speech._speech_recognition_result
   href: com.microsoft.cognitiveservices.speech._speech_recognition_result.yml
@@ -239,9 +189,9 @@ references:
   type: Method
   summary: <p>The set of properties exposed in the result. </p>
   syntax:
-    content: public RecognitionResultCollection getProperties()
+    content: public PropertyCollection getProperties()
     return:
-      type: com.microsoft.cognitiveservices.speech._speech_recognition_result._recognition_result_collection
+      type: com.microsoft.cognitiveservices.speech._property_collection
       description: <p>The set of properties exposed in the result. </p>
 - uid: com.microsoft.cognitiveservices.speech._speech_recognition_result.getReason()
   parent: com.microsoft.cognitiveservices.speech._speech_recognition_result
@@ -250,12 +200,12 @@ references:
   nameWithType: SpeechRecognitionResult.getReason()
   fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionResult.getReason()
   type: Method
-  summary: <p>Specifies status of the result. </p>
+  summary: <p>Specifies reason the result was created. </p>
   syntax:
-    content: public RecognitionStatus getReason()
+    content: public ResultReason getReason()
     return:
-      type: com.microsoft.cognitiveservices.speech._recognition_status
-      description: <p>Specifies status of the result. </p>
+      type: com.microsoft.cognitiveservices.speech._result_reason
+      description: <p>Specifies reason of the result. </p>
 - uid: com.microsoft.cognitiveservices.speech._speech_recognition_result.getResultId()
   parent: com.microsoft.cognitiveservices.speech._speech_recognition_result
   href: com.microsoft.cognitiveservices.speech._speech_recognition_result.yml
@@ -304,13 +254,3 @@ references:
   summary: <p>Defines result of speech recognition. </p>
   syntax:
     content: public class SpeechRecognitionResult
-- uid: com.microsoft.cognitiveservices.speech.translation._translation_status
-  parent: com.microsoft.cognitiveservices.speech.translation
-  href: com.microsoft.cognitiveservices.speech.translation._translation_status.yml
-  name: TranslationStatus
-  nameWithType: TranslationStatus
-  fullName: com.microsoft.cognitiveservices.speech.translation.TranslationStatus
-  type: Enum
-  summary: <p>Defines recognition status. </p>
-  syntax:
-    content: public enum TranslationStatus

@@ -1,0 +1,195 @@
+### YamlMime:ManagedReference
+items:
+- uid: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args
+  id: _speech_recognition_canceled_event_args
+  parent: com.microsoft.cognitiveservices.speech
+  children:
+  - com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getErrorDetails()
+  - com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getReason()
+  - com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getResult()
+  - com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getSessionId()
+  - com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.toString()
+  href: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.yml
+  langs:
+  - java
+  name: SpeechRecognitionCanceledEventArgs
+  nameWithType: SpeechRecognitionCanceledEventArgs
+  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionCanceledEventArgs
+  type: Class
+  source:
+    remote: &o0
+      path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionCanceledEventArgs.java
+      branch: javadocs201809
+      repo: https://msasg.visualstudio.com/DefaultCollection/Skyman/_git/Carbon
+    path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionCanceledEventArgs.java
+    startLine: 14
+  package: com.microsoft.cognitiveservices.speech
+  summary: <p>Defines payload of speech recognition canceled events. </p>
+  syntax:
+    content: public class SpeechRecognitionCanceledEventArgs
+  inheritance:
+  - java.lang.Object
+- uid: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getErrorDetails()
+  id: getErrorDetails()
+  parent: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args
+  href: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.yml
+  langs:
+  - java
+  name: getErrorDetails()
+  nameWithType: SpeechRecognitionCanceledEventArgs.getErrorDetails()
+  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionCanceledEventArgs.getErrorDetails()
+  overload: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getErrorDetails*
+  type: Method
+  source:
+    remote: *o0
+    path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionCanceledEventArgs.java
+    startLine: 58
+  package: com.microsoft.cognitiveservices.speech
+  summary: <p>The error details of why the cancellation occurred. </p>
+  syntax:
+    content: public String getErrorDetails()
+    return:
+      type: "26831127"
+      description: <p>A String that represents the error details. </p>
+- uid: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getReason()
+  id: getReason()
+  parent: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args
+  href: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.yml
+  langs:
+  - java
+  name: getReason()
+  nameWithType: SpeechRecognitionCanceledEventArgs.getReason()
+  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionCanceledEventArgs.getReason()
+  overload: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getReason*
+  type: Method
+  source:
+    remote: *o0
+    path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionCanceledEventArgs.java
+    startLine: 50
+  package: com.microsoft.cognitiveservices.speech
+  summary: <p>The reason the recognition was canceled. </p>
+  syntax:
+    content: public CancellationReason getReason()
+    return:
+      type: com.microsoft.cognitiveservices.speech._cancellation_reason
+      description: <p>Specifies the reason canceled. </p>
+- uid: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getResult()
+  id: getResult()
+  parent: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args
+  href: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.yml
+  langs:
+  - java
+  name: getResult()
+  nameWithType: SpeechRecognitionCanceledEventArgs.getResult()
+  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionCanceledEventArgs.getResult()
+  overload: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getResult*
+  type: Method
+  source:
+    remote: *o0
+    path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionCanceledEventArgs.java
+    startLine: 34
+  package: com.microsoft.cognitiveservices.speech
+  summary: <p>Specifies the recognition result. </p>
+  syntax:
+    content: public SpeechRecognitionResult getResult()
+    return:
+      type: com.microsoft.cognitiveservices.speech._speech_recognition_result
+      description: <p>the recognition result. </p>
+- uid: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getSessionId()
+  id: getSessionId()
+  parent: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args
+  href: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.yml
+  langs:
+  - java
+  name: getSessionId()
+  nameWithType: SpeechRecognitionCanceledEventArgs.getSessionId()
+  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionCanceledEventArgs.getSessionId()
+  overload: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getSessionId*
+  type: Method
+  source:
+    remote: *o0
+    path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionCanceledEventArgs.java
+    startLine: 42
+  package: com.microsoft.cognitiveservices.speech
+  summary: <p>Specifies the session identifier. </p>
+  syntax:
+    content: public final String getSessionId()
+    return:
+      type: 3d93591e
+      description: <p>the session identifier. </p>
+- uid: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.toString()
+  id: toString()
+  parent: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args
+  href: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.yml
+  langs:
+  - java
+  name: toString()
+  nameWithType: SpeechRecognitionCanceledEventArgs.toString()
+  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionCanceledEventArgs.toString()
+  overload: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.toString*
+  type: Method
+  source:
+    remote: *o0
+    path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionCanceledEventArgs.java
+    startLine: 67
+  package: com.microsoft.cognitiveservices.speech
+  summary: <p>Returns a String that represents the speech recognition canceled event args. </p>
+  syntax:
+    content: public String toString()
+    return:
+      type: "26831127"
+      description: <p>A String that represents the speech recognition canceled event args. </p>
+references:
+- uid: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getResult*
+  name: getResult
+  nameWithType: SpeechRecognitionCanceledEventArgs.getResult
+  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionCanceledEventArgs.getResult
+  package: com.microsoft.cognitiveservices.speech
+- uid: 3d93591e
+  spec.java:
+  - name: final String
+    fullName: final String
+- uid: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getSessionId*
+  name: getSessionId
+  nameWithType: SpeechRecognitionCanceledEventArgs.getSessionId
+  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionCanceledEventArgs.getSessionId
+  package: com.microsoft.cognitiveservices.speech
+- uid: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getReason*
+  name: getReason
+  nameWithType: SpeechRecognitionCanceledEventArgs.getReason
+  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionCanceledEventArgs.getReason
+  package: com.microsoft.cognitiveservices.speech
+- uid: "26831127"
+  spec.java:
+  - name: String
+    fullName: String
+- uid: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.getErrorDetails*
+  name: getErrorDetails
+  nameWithType: SpeechRecognitionCanceledEventArgs.getErrorDetails
+  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionCanceledEventArgs.getErrorDetails
+  package: com.microsoft.cognitiveservices.speech
+- uid: com.microsoft.cognitiveservices.speech._speech_recognition_canceled_event_args.toString*
+  name: toString
+  nameWithType: SpeechRecognitionCanceledEventArgs.toString
+  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionCanceledEventArgs.toString
+  package: com.microsoft.cognitiveservices.speech
+- uid: com.microsoft.cognitiveservices.speech._speech_recognition_result
+  parent: com.microsoft.cognitiveservices.speech
+  href: com.microsoft.cognitiveservices.speech._speech_recognition_result.yml
+  name: SpeechRecognitionResult
+  nameWithType: SpeechRecognitionResult
+  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionResult
+  type: Class
+  summary: <p>Defines result of speech recognition. </p>
+  syntax:
+    content: public class SpeechRecognitionResult
+- uid: com.microsoft.cognitiveservices.speech._cancellation_reason
+  parent: com.microsoft.cognitiveservices.speech
+  href: com.microsoft.cognitiveservices.speech._cancellation_reason.yml
+  name: CancellationReason
+  nameWithType: CancellationReason
+  fullName: com.microsoft.cognitiveservices.speech.CancellationReason
+  type: Enum
+  summary: <p>Defines the possible reasons a recognition result might be canceled. </p>
+  syntax:
+    content: public enum CancellationReason

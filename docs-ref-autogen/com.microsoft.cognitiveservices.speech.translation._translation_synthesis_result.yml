@@ -6,7 +6,6 @@ items:
   children:
   - com.microsoft.cognitiveservices.speech.translation._translation_synthesis_result.close()
   - com.microsoft.cognitiveservices.speech.translation._translation_synthesis_result.getAudio()
-  - com.microsoft.cognitiveservices.speech.translation._translation_synthesis_result.getSynthesisStatus()
   - com.microsoft.cognitiveservices.speech.translation._translation_synthesis_result.toString()
   href: com.microsoft.cognitiveservices.speech.translation._translation_synthesis_result.yml
   langs:
@@ -18,7 +17,7 @@ items:
   source:
     remote: &o0
       path: source/bindings/java/com/microsoft/cognitiveservices/speech/translation/TranslationSynthesisResult.java
-      branch: javadocs
+      branch: javadocs201809
       repo: https://msasg.visualstudio.com/DefaultCollection/Skyman/_git/Carbon
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/translation/TranslationSynthesisResult.java
     startLine: 11
@@ -42,7 +41,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/translation/TranslationSynthesisResult.java
-    startLine: 39
+    startLine: 25
   package: com.microsoft.cognitiveservices.speech.translation
   summary: <p>Explicitly frees any external resource attached to the object </p>
   syntax:
@@ -61,36 +60,14 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/translation/TranslationSynthesisResult.java
-    startLine: 50
+    startLine: 36
   package: com.microsoft.cognitiveservices.speech.translation
-  summary: <p>Translated text in the target language. </p>
+  summary: <p>The voice output of the translated text in the target language. </p>
   syntax:
     content: public byte [] getAudio()
     return:
       type: ccd9418d
       description: <p>Translated text in the target language. </p>
-- uid: com.microsoft.cognitiveservices.speech.translation._translation_synthesis_result.getSynthesisStatus()
-  id: getSynthesisStatus()
-  parent: com.microsoft.cognitiveservices.speech.translation._translation_synthesis_result
-  href: com.microsoft.cognitiveservices.speech.translation._translation_synthesis_result.yml
-  langs:
-  - java
-  name: getSynthesisStatus()
-  nameWithType: TranslationSynthesisResult.getSynthesisStatus()
-  fullName: com.microsoft.cognitiveservices.speech.translation.TranslationSynthesisResult.getSynthesisStatus()
-  overload: com.microsoft.cognitiveservices.speech.translation._translation_synthesis_result.getSynthesisStatus*
-  type: Method
-  source:
-    remote: *o0
-    path: source/bindings/java/com/microsoft/cognitiveservices/speech/translation/TranslationSynthesisResult.java
-    startLine: 69
-  package: com.microsoft.cognitiveservices.speech.translation
-  summary: <p>Status of the synthesis. </p>
-  syntax:
-    content: public SynthesisStatus getSynthesisStatus()
-    return:
-      type: com.microsoft.cognitiveservices.speech.translation._synthesis_status
-      description: <p>status of the synthesis. </p>
 - uid: com.microsoft.cognitiveservices.speech.translation._translation_synthesis_result.toString()
   id: toString()
   parent: com.microsoft.cognitiveservices.speech.translation._translation_synthesis_result
@@ -105,7 +82,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/translation/TranslationSynthesisResult.java
-    startLine: 79
+    startLine: 55
   package: com.microsoft.cognitiveservices.speech.translation
   summary: <p>Returns a String that represents the speech recognition result. </p>
   syntax:
@@ -128,11 +105,6 @@ references:
   nameWithType: TranslationSynthesisResult.getAudio
   fullName: com.microsoft.cognitiveservices.speech.translation.TranslationSynthesisResult.getAudio
   package: com.microsoft.cognitiveservices.speech.translation
-- uid: com.microsoft.cognitiveservices.speech.translation._translation_synthesis_result.getSynthesisStatus*
-  name: getSynthesisStatus
-  nameWithType: TranslationSynthesisResult.getSynthesisStatus
-  fullName: com.microsoft.cognitiveservices.speech.translation.TranslationSynthesisResult.getSynthesisStatus
-  package: com.microsoft.cognitiveservices.speech.translation
 - uid: "26831127"
   spec.java:
   - name: String
@@ -142,13 +114,3 @@ references:
   nameWithType: TranslationSynthesisResult.toString
   fullName: com.microsoft.cognitiveservices.speech.translation.TranslationSynthesisResult.toString
   package: com.microsoft.cognitiveservices.speech.translation
-- uid: com.microsoft.cognitiveservices.speech.translation._synthesis_status
-  parent: com.microsoft.cognitiveservices.speech.translation
-  href: com.microsoft.cognitiveservices.speech.translation._synthesis_status.yml
-  name: SynthesisStatus
-  nameWithType: SynthesisStatus
-  fullName: com.microsoft.cognitiveservices.speech.translation.SynthesisStatus
-  type: Enum
-  summary: <p>Defines synthesis status. </p>
-  syntax:
-    content: public enum SynthesisStatus

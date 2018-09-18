@@ -17,12 +17,12 @@ items:
   source:
     remote: &o0
       path: source/bindings/java/com/microsoft/cognitiveservices/speech/translation/TranslationTextResultEventArgs.java
-      branch: javadocs
+      branch: javadocs201809
       repo: https://msasg.visualstudio.com/DefaultCollection/Skyman/_git/Carbon
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/translation/TranslationTextResultEventArgs.java
     startLine: 11
   package: com.microsoft.cognitiveservices.speech.translation
-  summary: <p>Define payload of translation intermediate/final result events. </p>
+  summary: <p>Defines payload of translation recognizing/recognized events. </p>
   syntax:
     content: public class TranslationTextResultEventArgs
   inheritance:
@@ -132,6 +132,6 @@ references:
   nameWithType: TranslationTextResult
   fullName: com.microsoft.cognitiveservices.speech.translation.TranslationTextResult
   type: Class
-  summary: <p>Defines TranslationText result. </p>
+  summary: <p>Defines translation text result. </p>
   syntax:
     content: public class TranslationTextResult extends SpeechRecognitionResult

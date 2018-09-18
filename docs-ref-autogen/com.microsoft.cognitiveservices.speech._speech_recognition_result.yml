@@ -6,7 +6,6 @@ items:
   children:
   - com.microsoft.cognitiveservices.speech._speech_recognition_result.close()
   - com.microsoft.cognitiveservices.speech._speech_recognition_result.getDuration()
-  - com.microsoft.cognitiveservices.speech._speech_recognition_result.getErrorDetails()
   - com.microsoft.cognitiveservices.speech._speech_recognition_result.getJson()
   - com.microsoft.cognitiveservices.speech._speech_recognition_result.getOffset()
   - com.microsoft.cognitiveservices.speech._speech_recognition_result.getProperties()
@@ -25,7 +24,7 @@ items:
   source:
     remote: &o0
       path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResult.java
-      branch: javadocs
+      branch: javadocs201809
       repo: https://msasg.visualstudio.com/DefaultCollection/Skyman/_git/Carbon
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResult.java
     startLine: 15
@@ -49,7 +48,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResult.java
-    startLine: 44
+    startLine: 51
   package: com.microsoft.cognitiveservices.speech
   summary: <p>Explicitly frees any external resource attached to the object </p>
   syntax:
@@ -68,7 +67,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResult.java
-    startLine: 84
+    startLine: 91
   package: com.microsoft.cognitiveservices.speech
   summary: <p>Duration of recognized speech in milliseconds. </p>
   syntax:
@@ -76,28 +75,6 @@ items:
     return:
       type: 0364520f
       description: <p>Duration of recognized speech in milliseconds. </p>
-- uid: com.microsoft.cognitiveservices.speech._speech_recognition_result.getErrorDetails()
-  id: getErrorDetails()
-  parent: com.microsoft.cognitiveservices.speech._speech_recognition_result
-  href: com.microsoft.cognitiveservices.speech._speech_recognition_result.yml
-  langs:
-  - java
-  name: getErrorDetails()
-  nameWithType: SpeechRecognitionResult.getErrorDetails()
-  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionResult.getErrorDetails()
-  overload: com.microsoft.cognitiveservices.speech._speech_recognition_result.getErrorDetails*
-  type: Method
-  source:
-    remote: *o0
-    path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResult.java
-    startLine: 101
-  package: com.microsoft.cognitiveservices.speech
-  summary: <p>In case of an unsuccessful recognition, provides a brief description of an occurred error. This field is only filled-out if the recognition status (</p>
-  syntax:
-    content: public String getErrorDetails()
-    return:
-      type: "26831127"
-      description: <p>a brief description of an error. </p>
 - uid: com.microsoft.cognitiveservices.speech._speech_recognition_result.getJson()
   id: getJson()
   parent: com.microsoft.cognitiveservices.speech._speech_recognition_result
@@ -112,7 +89,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResult.java
-    startLine: 109
+    startLine: 107
   package: com.microsoft.cognitiveservices.speech
   summary: <p>A string containing Json serialized recognition result as it was received from the service. </p>
   syntax:
@@ -134,7 +111,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResult.java
-    startLine: 92
+    startLine: 99
   package: com.microsoft.cognitiveservices.speech
   summary: <p>Offset of recognized speech in milliseconds. </p>
   syntax:
@@ -156,13 +133,13 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResult.java
-    startLine: 117
+    startLine: 115
   package: com.microsoft.cognitiveservices.speech
   summary: <p>The set of properties exposed in the result. </p>
   syntax:
-    content: public RecognitionResultCollection getProperties()
+    content: public PropertyCollection getProperties()
     return:
-      type: com.microsoft.cognitiveservices.speech._speech_recognition_result._recognition_result_collection
+      type: com.microsoft.cognitiveservices.speech._property_collection
       description: <p>The set of properties exposed in the result. </p>
 - uid: com.microsoft.cognitiveservices.speech._speech_recognition_result.getReason()
   id: getReason()
@@ -178,14 +155,14 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResult.java
-    startLine: 68
+    startLine: 75
   package: com.microsoft.cognitiveservices.speech
-  summary: <p>Specifies status of the result. </p>
+  summary: <p>Specifies reason the result was created. </p>
   syntax:
-    content: public RecognitionStatus getReason()
+    content: public ResultReason getReason()
     return:
-      type: com.microsoft.cognitiveservices.speech._recognition_status
-      description: <p>Specifies status of the result. </p>
+      type: com.microsoft.cognitiveservices.speech._result_reason
+      description: <p>Specifies reason of the result. </p>
 - uid: com.microsoft.cognitiveservices.speech._speech_recognition_result.getResultId()
   id: getResultId()
   parent: com.microsoft.cognitiveservices.speech._speech_recognition_result
@@ -200,7 +177,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResult.java
-    startLine: 60
+    startLine: 67
   package: com.microsoft.cognitiveservices.speech
   summary: <p>Specifies the result identifier. </p>
   syntax:
@@ -222,7 +199,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResult.java
-    startLine: 76
+    startLine: 83
   package: com.microsoft.cognitiveservices.speech
   summary: <p>Presents the recognized text in the result. </p>
   syntax:
@@ -265,7 +242,7 @@ items:
   source:
     remote: *o0
     path: source/bindings/java/com/microsoft/cognitiveservices/speech/SpeechRecognitionResult.java
-    startLine: 126
+    startLine: 124
   package: com.microsoft.cognitiveservices.speech
   summary: <p>Returns a String that represents the speech recognition result. </p>
   syntax:
@@ -321,11 +298,6 @@ references:
   nameWithType: SpeechRecognitionResult.getOffset
   fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionResult.getOffset
   package: com.microsoft.cognitiveservices.speech
-- uid: com.microsoft.cognitiveservices.speech._speech_recognition_result.getErrorDetails*
-  name: getErrorDetails
-  nameWithType: SpeechRecognitionResult.getErrorDetails
-  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionResult.getErrorDetails
-  package: com.microsoft.cognitiveservices.speech
 - uid: com.microsoft.cognitiveservices.speech._speech_recognition_result.getJson*
   name: getJson
   nameWithType: SpeechRecognitionResult.getJson
@@ -358,25 +330,26 @@ references:
   nameWithType: TranslationTextResult
   fullName: com.microsoft.cognitiveservices.speech.translation.TranslationTextResult
   type: Class
-  summary: <p>Defines TranslationText result. </p>
+  summary: <p>Defines translation text result. </p>
   syntax:
     content: public class TranslationTextResult
-- uid: com.microsoft.cognitiveservices.speech._recognition_status
+- uid: com.microsoft.cognitiveservices.speech._result_reason
   parent: com.microsoft.cognitiveservices.speech
-  href: com.microsoft.cognitiveservices.speech._recognition_status.yml
-  name: RecognitionStatus
-  nameWithType: RecognitionStatus
-  fullName: com.microsoft.cognitiveservices.speech.RecognitionStatus
+  href: com.microsoft.cognitiveservices.speech._result_reason.yml
+  name: ResultReason
+  nameWithType: ResultReason
+  fullName: com.microsoft.cognitiveservices.speech.ResultReason
   type: Enum
-  summary: <p>Defines recognition status. </p>
+  summary: <p>Defines the possible reasons a recognition result might be generated. </p>
   syntax:
-    content: public enum RecognitionStatus
-- uid: com.microsoft.cognitiveservices.speech._speech_recognition_result._recognition_result_collection
+    content: public enum ResultReason
+- uid: com.microsoft.cognitiveservices.speech._property_collection
   parent: com.microsoft.cognitiveservices.speech
-  href: com.microsoft.cognitiveservices.speech._speech_recognition_result._recognition_result_collection.yml
-  name: SpeechRecognitionResult.RecognitionResultCollection
-  nameWithType: SpeechRecognitionResult.RecognitionResultCollection
-  fullName: com.microsoft.cognitiveservices.speech.SpeechRecognitionResult.RecognitionResultCollection
+  href: com.microsoft.cognitiveservices.speech._property_collection.yml
+  name: PropertyCollection
+  nameWithType: PropertyCollection
+  fullName: com.microsoft.cognitiveservices.speech.PropertyCollection
   type: Class
+  summary: <p>Represents collection or properties and their values. </p>
   syntax:
-    content: public class RecognitionResultCollection
+    content: public class PropertyCollection
