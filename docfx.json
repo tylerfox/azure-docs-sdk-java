@@ -146,7 +146,10 @@
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "azure-java-stable || azure-java-preview"
+        "moniker_range": [
+          "azure-java-stable",
+          "azure-java-preview"
+        ]
       }
     },
     "versions": {
@@ -180,9 +183,15 @@
     },
     "fileMetadata": {
       "monikers": {
-        "docs-ref-autogen/**": [ "azure-java-stable" ],
-        "preview/docs-ref-autogen/**": [ "azure-java-preview" ],
-        "docs-ref-services/**": [ "azure-java-stable" ]
+        "docs-ref-autogen/**": [
+          "azure-java-stable"
+        ],
+        "preview/docs-ref-autogen/**": [
+          "azure-java-preview"
+        ],
+        "docs-ref-services/**": [
+          "azure-java-stable"
+        ]
       },
       "monikerRange": {
         "docs-ref-autogen/**": "azure-java-stable",
